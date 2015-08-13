@@ -1,5 +1,10 @@
 source 'https://ruby.taobao.org'
 
+group :production do
+gem 'pg', '0.17.1'
+gem 'rails_12factor', '0.0.2'
+end
+
 gem 'bcrypt', '3.1.7'
 gem 'bootstrap-sass', '3.2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

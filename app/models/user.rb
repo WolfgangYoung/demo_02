@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true, length:{ maximum: 255 },
                     format: { with: VALID_EMAIL },
                     uniqueness: { case_sensitive: false }
-  validates :password, length: { maximum: 6 }
+  validates :password, length: { maximum: 20 }
   has_secure_password
 
   def User.digest(string)
